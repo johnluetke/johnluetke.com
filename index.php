@@ -29,7 +29,7 @@
         </script>
     </head>
     <body>
-        <section>
+        <header>
             <div class="container-fluid">
                 <div class="row">
                     <div id="banner" class="col-md-12">
@@ -49,7 +49,7 @@
                     <p class="col-xs-10">Nulla nec mi id quam faucibus commodo. Vivamus lorem ipsum, pulvinar eu ultrices a, fringilla eleifend ligula. Duis convallis sed mi a scelerisque. Praesent ullamcorper nibh at orci hendrerit auctor. Maecenas iaculis felis a magna ultrices, ac semper felis aliquet.</p>
                 </div>
             </div>
-        </section>
+        </header>
 
         <section>
             <div class="container-fluid">
@@ -77,33 +77,43 @@
                     <div class="col-md-1 visible-md visible-lg"></div>
                     <div class="col-xs-6 col-sm-6 col-md-2">
                         <a href="#speaker-kipman">
-                            <img src="http://www.venatu.com/images/ge/yellow-circle.png"/>
+                            <div class="img">
+                                <img src="images/kipman.jpg"/>
+                            </div>
                             <h4>Alex Kipman</h4>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-2">
                         <a href="#speaker-hanke">
-                            <img src="http://www.venatu.com/images/ge/yellow-circle.png"/>
+                            <div class="img">
+                                <img src="images/hanke.png"/>
+                            </div>
                             <h4>John Hanke</h4>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-2">
                         <a href="#speaker-luckey">
-                            <img src="http://www.venatu.com/images/ge/yellow-circle.png"/>
+                            <div class="img">
+                                <img src="images/luckey.png"/>
+                            </div>
                             <h4>Palmer Luckey</h4>
                         </a>
                     </div>
                     <div class="col-sm-2 visible-sm"></div>
                     <div class="col-xs-6 col-sm-6 col-md-2">
                         <a href="#speaker-coz">
-                            <img src="http://www.venatu.com/images/ge/yellow-circle.png"/>
+                            <div class="img">
+                                <img src="images/coz.jpg"/>
+                            </div>
                             <h4>David Coz</h4>
                         </a>
                     </div>
                     <div class="col-xs-3 visible-xs visible-sm"></div>
                     <div class="col-xs-6 col-sm-6 col-md-2">
                         <a href="#speaker-lake">
-                            <img src="http://www.venatu.com/images/ge/yellow-circle.png"/>
+                            <div class="img">
+                                <img src="images/lake.png"/>
+                            </div>
                             <h4>Stephen Lake</h4>
                         </a>
                     </div>
@@ -113,7 +123,7 @@
 
         <section id="speaker-kipman" class="speaker">
             <div>
-                <img src="http://www.venatu.com/images/ge/yellow-circle.png" height="200" />
+                <img src="images/kipman.jpg" />
                 <h3>Alex Kipman</h3>
                 <cite>Microsoft</cite>
             </div>
@@ -125,7 +135,7 @@
 
         <section id="speaker-hanke" class="speaker">
             <div>
-                <img src="http://www.venatu.com/images/ge/yellow-circle.png" height="200" />
+                <img src="images/hanke.png" />
                 <h3>John Hanke</h3>
                 <cite>Niantic Labs</cite>
             </div>
@@ -137,7 +147,7 @@
 
         <section id="speaker-luckey" class="speaker">
             <div>
-                <img src="http://www.venatu.com/images/ge/yellow-circle.png" height="200" />
+                <img src="images/luckey.png" />
                 <h3>Palmer Luckey</h3>
                 <cite>Oculus VR</cite>
             </div>
@@ -149,7 +159,7 @@
 
         <section id="speaker-coz" class="speaker">
             <div>
-                <img src="http://www.venatu.com/images/ge/yellow-circle.png" height="200" />
+                <img src="images/coz.jpg" />
                 <h3>David Coz</h3>
                 <cite>Google</cite>
             </div>
@@ -161,7 +171,7 @@
 
         <section id="speaker-lake" class="speaker">
             <div>
-                <img src="http://www.venatu.com/images/ge/yellow-circle.png" height="200" />
+                <img src="images/lake.png" />
                 <h3>Stephen Lake</h3>
                 <cite>Thalmic Labs</cite>
             </div>
