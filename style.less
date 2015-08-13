@@ -1,0 +1,198 @@
+@import "./bootstrap-src/bootstrap-3.3.5/less/variables.less";
+
+@font-face {
+    font-family: "Shree";
+    src: url("fonts/ShreeDev0714.ttf");
+}
+
+h1, h2, h3 {
+    color: #FF5335;
+    font-weight: bolder;
+}
+
+body {
+    background-color: #1D181F;
+    color: #B29C85;
+    font-family: "Shree", sans-serif;
+}
+
+@media (max-width: @screen-sm) {
+    p {
+        font-size: 160%;
+    }
+}
+
+@media (min-width: @screen-sm) and (max-width: @screen-md) {
+    p {
+        font-size: 170%;
+    }
+
+    .speaker .bio p {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: @screen-md) {
+    p {
+        font-size: 160%;
+    }
+}
+
+.row div {
+/*    border: 1px solid #FF5335; */
+    text-align: center;
+}
+
+#banner {
+    background-color: #306E73;
+    border-top: 10px solid #3B424C;
+    border-bottom: 10px solid #3B424C;
+    height: 50%;
+    margin-top: 100px;
+    max-height: 500px;
+    position: relative;
+
+    #this1, #this2 {
+        position: absolute;
+    }
+
+    #this1 {
+        top: 0px;
+        left: 13%;
+        width: 20%;
+        max-width: 150px;
+    }
+
+    #this2 {
+        bottom: 0px;
+        right: 13%;
+        width: 22%;
+        max-width: 180px;
+    }
+}
+
+#title {
+    color: #FF5335;
+    font-size: 11vmin;
+}
+
+#blurb {
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        margin-top: 5%;
+    }
+}
+
+#info {
+    margin-top: 5%;
+
+    p {
+        font-weight: bold;
+        margin: 0px;
+        text-align: center !important;
+    }
+}
+
+#info p:nth-child(2) {
+    margin-bottom: 10px;   
+}
+
+#speakers-list a {
+    color: #B29C85;
+    text-decoration: none;
+}
+
+#speakers-list a img {
+    opacity: 0.75;
+    width: 90%;
+    max-width: 180px;
+}
+
+
+#speakers-list p  {
+    text-align: center;
+}
+
+section:not(:nth-child(1)), footer {
+    text-align: center;
+    margin: 0 auto;   
+    position: relative;
+    width: 100%;
+}
+
+.contaier-fluid {
+    width: 100%;
+}
+
+section .bio {
+    margin-top: 2% !important;
+}
+
+section div:nth-child(2) p {
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+section:not(:nth-child(1)) > div {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+body section:nth-child(2) {
+    top: 25%;
+}
+
+body section:nth-child(3) {
+    top: 50%;
+}
+
+body section:nth-child(4) {
+    top: 75%;
+}
+
+body section:nth-child(5) {
+    top: 100%;
+}
+
+body section:nth-child(6) {
+    top: 125%;
+}
+
+body section:nth-child(7) {
+    top: 150%;
+}
+
+body section:nth-child(8) {
+    top: 175%;
+}
+
+footer {
+    position: relative;
+    top: 200%;
+}
+
+footer {
+
+    img {
+        margin-bottom: 35px;
+    }
+
+    img:not(#n) {
+        height: 25px;
+        width: auto;
+    }
+
+    img#n {
+        width: 50px;
+        height: auto;
+    }
+}
