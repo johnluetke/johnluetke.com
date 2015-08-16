@@ -51,135 +51,142 @@
             </div>
         </header>
 
-        <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div id="blurb" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h2>
-                        <h2>Phasellus vel tincidunt lacus.</h2>
-<p>Donec scelerisque ante nunc, non malesuada sapien elementum in. Cras quis gravida elit. Pellentesque consectetur, erat sit amet semper ultrices, nisl arcu pellentesque justo, in eleifend massa velit sit amet lacus. Aliquam sed dolor vitae nunc pretium sagittis. In hac habitasse platea dictumst. Nullam vel molestie tellus. Sed ut ex sed est aliquam pellentesque in mollis neque. Sed ac orci nec felis pharetra egestas sed quis lectus. Donec quis mi interdum justo varius fringilla sit amet ut nunc. Nulla ac ornare sapien. Pellentesque fermentum metus eros, ut hendrerit eros porta non.</p>
+         <main>
+            <section id="#blurb">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h2>
+                            <h2>Phasellus vel tincidunt lacus.</h2>
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="info">
-                        <p>Thursday, October 11</p>
-                        <p>7:30 PM</p>
-                        <p />
-                        <p>Meydenbauer Center</p>
-                        <p>11100 NE 6th St, Bellevue</p>
+                    <div class="row">
+                        <div class="col-xs-1"></div>
+                        <p class="col-xs-10">Donec scelerisque ante nunc, non malesuada sapien elementum in. Cras quis gravida elit. Pellentesque consectetur, erat sit amet semper ultrices, nisl arcu pellentesque justo, in eleifend massa velit sit amet lacus. Aliquam sed dolor vitae nunc pretium sagittis. In hac habitasse platea dictumst. Nullam vel molestie tellus. Sed ut ex sed est aliquam pellentesque in mollis neque. Sed ac orci nec felis pharetra egestas sed quis lectus. Donec quis mi interdum justo varius fringilla sit amet ut nunc. Nulla ac ornare sapien. Pellentesque fermentum metus eros, ut hendrerit eros porta non.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="speakers-list">
-            <h2>Speakers</h2>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-1 visible-md visible-lg"></div>
-                    <div class="col-xs-6 col-sm-6 col-md-2">
-                        <a href="#speaker-kipman">
-                            <div class="img">
-                                <img src="images/kipman.jpg"/>
-                            </div>
-                            <h4>Alex Kipman</h4>
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-2">
-                        <a href="#speaker-hanke">
-                            <div class="img">
-                                <img src="images/hanke.png"/>
-                            </div>
-                            <h4>John Hanke</h4>
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-2">
-                        <a href="#speaker-luckey">
-                            <div class="img">
-                                <img src="images/luckey.png"/>
-                            </div>
-                            <h4>Palmer Luckey</h4>
-                        </a>
-                    </div>
-                    <div class="col-sm-2 visible-sm"></div>
-                    <div class="col-xs-6 col-sm-6 col-md-2">
-                        <a href="#speaker-coz">
-                            <div class="img">
-                                <img src="images/coz.jpg"/>
-                            </div>
-                            <h4>David Coz</h4>
-                        </a>
-                    </div>
-                    <div class="col-xs-3 visible-xs visible-sm"></div>
-                    <div class="col-xs-6 col-sm-6 col-md-2">
-                        <a href="#speaker-lake">
-                            <div class="img">
-                                <img src="images/lake.png"/>
-                            </div>
-                            <h4>Stephen Lake</h4>
-                        </a>
+                    <div class="row">
+                        <div class="col-xs-12" id="info">
+                            <p>Thursday, October 11</p>
+                            <p>7:30 PM</p>
+                            <p />
+                            <p>Meydenbauer Center</p>
+                            <p>11100 NE 6th St, Bellevue</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="speaker-kipman" class="speaker">
-            <div>
-                <img src="images/kipman.jpg" />
-                <h3>Alex Kipman</h3>
-                <cite>Microsoft</cite>
-            </div>
-            <div class="bio">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tincidunt sapien. Vivamus vel orci at quam hendrerit maximus. Proin egestas consequat ultrices. Nam laoreet ipsum tempus quam imperdiet, at suscipit massa rhoncus. Nam consequat malesuada mi, sed ultricies erat facilisis accumsan. Duis consequat, elit vitae placerat ullamcorper, augue lacus faucibus diam, volutpat placerat metus ipsum eu leo. Aliquam erat volutpat. Vestibulum urna metus, fermentum et congue nec, pulvinar sed magna. Suspendisse ornare, urna vestibulum elementum iaculis, ante nulla dictum tellus, ac varius mauris quam vel erat. Etiam consectetur odio consectetur condimentum efficitur. Maecenas faucibus ante eget rutrum pellentesque. Praesent ullamcorper justo in nisi congue, eget tempor sapien consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel commodo enim. Aenean auctor ipsum id consectetur molestie.</p>
-                <p>In fermentum elit sed imperdiet suscipit. Nulla a sollicitudin justo. Nullam ullamcorper posuere velit, at imperdiet est auctor id. Vestibulum tempus lacus molestie ipsum tincidunt, sed cursus ligula viverra. Phasellus non scelerisque neque. Fusce ullamcorper volutpat felis. Sed tempor ante elit.</p>
-            </div>
-        </section>
-
-        <section id="speaker-hanke" class="speaker">
-            <div>
-                <img src="images/hanke.png" />
-                <h3>John Hanke</h3>
-                <cite>Niantic Labs</cite>
-            </div>
-            <div class="bio">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tincidunt sapien. Vivamus vel orci at quam hendrerit maximus. Proin egestas consequat ultrices. Nam laoreet ipsum tempus quam imperdiet, at suscipit massa rhoncus. Nam consequat malesuada mi, sed ultricies erat facilisis accumsan. Duis consequat, elit vitae placerat ullamcorper, augue lacus faucibus diam, volutpat placerat metus ipsum eu leo. Aliquam erat volutpat. Vestibulum urna metus, fermentum et congue nec, pulvinar sed magna. Suspendisse ornare, urna vestibulum elementum iaculis, ante nulla dictum tellus, ac varius mauris quam vel erat. Etiam consectetur odio consectetur condimentum efficitur. Maecenas faucibus ante eget rutrum pellentesque. Praesent ullamcorper justo in nisi congue, eget tempor sapien consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel commodo enim. Aenean auctor ipsum id consectetur molestie.</p>
-                <p>In fermentum elit sed imperdiet suscipit. Nulla a sollicitudin justo. Nullam ullamcorper posuere velit, at imperdiet est auctor id. Vestibulum tempus lacus molestie ipsum tincidunt, sed cursus ligula viverra. Phasellus non scelerisque neque. Fusce ullamcorper volutpat felis. Sed tempor ante elit.</p>
-            </div>
-        </section>
-
-        <section id="speaker-luckey" class="speaker">
-            <div>
-                <img src="images/luckey.png" />
-                <h3>Palmer Luckey</h3>
-                <cite>Oculus VR</cite>
-            </div>
-            <div class="bio">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tincidunt sapien. Vivamus vel orci at quam hendrerit maximus. Proin egestas consequat ultrices. Nam laoreet ipsum tempus quam imperdiet, at suscipit massa rhoncus. Nam consequat malesuada mi, sed ultricies erat facilisis accumsan. Duis consequat, elit vitae placerat ullamcorper, augue lacus faucibus diam, volutpat placerat metus ipsum eu leo. Aliquam erat volutpat. Vestibulum urna metus, fermentum et congue nec, pulvinar sed magna. Suspendisse ornare, urna vestibulum elementum iaculis, ante nulla dictum tellus, ac varius mauris quam vel erat. Etiam consectetur odio consectetur condimentum efficitur. Maecenas faucibus ante eget rutrum pellentesque. Praesent ullamcorper justo in nisi congue, eget tempor sapien consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel commodo enim. Aenean auctor ipsum id consectetur molestie.</p>
-                <p>In fermentum elit sed imperdiet suscipit. Nulla a sollicitudin justo. Nullam ullamcorper posuere velit, at imperdiet est auctor id. Vestibulum tempus lacus molestie ipsum tincidunt, sed cursus ligula viverra. Phasellus non scelerisque neque. Fusce ullamcorper volutpat felis. Sed tempor ante elit.</p>
-            </div>
-        </section>
-
-        <section id="speaker-coz" class="speaker">
-            <div>
-                <img src="images/coz.jpg" />
-                <h3>David Coz</h3>
-                <cite>Google</cite>
-            </div>
-            <div class="bio">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tincidunt sapien. Vivamus vel orci at quam hendrerit maximus. Proin egestas consequat ultrices. Nam laoreet ipsum tempus quam imperdiet, at suscipit massa rhoncus. Nam consequat malesuada mi, sed ultricies erat facilisis accumsan. Duis consequat, elit vitae placerat ullamcorper, augue lacus faucibus diam, volutpat placerat metus ipsum eu leo. Aliquam erat volutpat. Vestibulum urna metus, fermentum et congue nec, pulvinar sed magna. Suspendisse ornare, urna vestibulum elementum iaculis, ante nulla dictum tellus, ac varius mauris quam vel erat. Etiam consectetur odio consectetur condimentum efficitur. Maecenas faucibus ante eget rutrum pellentesque. Praesent ullamcorper justo in nisi congue, eget tempor sapien consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel commodo enim. Aenean auctor ipsum id consectetur molestie.</p>
-                <p>In fermentum elit sed imperdiet suscipit. Nulla a sollicitudin justo. Nullam ullamcorper posuere velit, at imperdiet est auctor id. Vestibulum tempus lacus molestie ipsum tincidunt, sed cursus ligula viverra. Phasellus non scelerisque neque. Fusce ullamcorper volutpat felis. Sed tempor ante elit.</p>
-            </div>
-        </section>
-
-        <section id="speaker-lake" class="speaker">
-            <div>
-                <img src="images/lake.png" />
-                <h3>Stephen Lake</h3>
-                <cite>Thalmic Labs</cite>
-            </div>
-            <div class="bio">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tincidunt sapien. Vivamus vel orci at quam hendrerit maximus. Proin egestas consequat ultrices. Nam laoreet ipsum tempus quam imperdiet, at suscipit massa rhoncus. Nam consequat malesuada mi, sed ultricies erat facilisis accumsan. Duis consequat, elit vitae placerat ullamcorper, augue lacus faucibus diam, volutpat placerat metus ipsum eu leo. Aliquam erat volutpat. Vestibulum urna metus, fermentum et congue nec, pulvinar sed magna. Suspendisse ornare, urna vestibulum elementum iaculis, ante nulla dictum tellus, ac varius mauris quam vel erat. Etiam consectetur odio consectetur condimentum efficitur. Maecenas faucibus ante eget rutrum pellentesque. Praesent ullamcorper justo in nisi congue, eget tempor sapien consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel commodo enim. Aenean auctor ipsum id consectetur molestie.</p>
-                <p>In fermentum elit sed imperdiet suscipit. Nulla a sollicitudin justo. Nullam ullamcorper posuere velit, at imperdiet est auctor id. Vestibulum tempus lacus molestie ipsum tincidunt, sed cursus ligula viverra. Phasellus non scelerisque neque. Fusce ullamcorper volutpat felis. Sed tempor ante elit.</p>
-            </div>
-        </section>
+            </section>
+    
+            <section id="speakers-list">
+                <h2>Speakers</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-1 visible-md visible-lg"></div>
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <a href="#speaker-kipman">
+                                <div class="img">
+                                    <img src="images/kipman.jpg"/>
+                                </div>
+                                <h4>Alex Kipman</h4>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <a href="#speaker-hanke">
+                                <div class="img">
+                                    <img src="images/hanke.png"/>
+                                </div>
+                                <h4>John Hanke</h4>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <a href="#speaker-luckey">
+                                <div class="img">
+                                    <img src="images/luckey.png"/>
+                                </div>
+                                <h4>Palmer Luckey</h4>
+                            </a>
+                        </div>
+                        <div class="col-sm-2 visible-sm"></div>
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <a href="#speaker-coz">
+                                <div class="img">
+                                    <img src="images/coz.jpg"/>
+                                </div>
+                                <h4>David Coz</h4>
+                            </a>
+                        </div>
+                        <div class="col-xs-3 visible-xs visible-sm"></div>
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <a href="#speaker-lake">
+                                <div class="img">
+                                    <img src="images/lake.png"/>
+                                </div>
+                                <h4>Stephen Lake</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="speaker-kipman" class="speaker">
+                <div>
+                    <img src="images/kipman.jpg" />
+                    <h3>Alex Kipman</h3>
+                    <cite>Microsoft</cite>
+                </div>
+                <div class="bio">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tincidunt sapien. Vivamus vel orci at quam hendrerit maximus. Proin egestas consequat ultrices. Nam laoreet ipsum tempus quam imperdiet, at suscipit massa rhoncus. Nam consequat malesuada mi, sed ultricies erat facilisis accumsan. Duis consequat, elit vitae placerat ullamcorper, augue lacus faucibus diam, volutpat placerat metus ipsum eu leo. Aliquam erat volutpat. Vestibulum urna metus, fermentum et congue nec, pulvinar sed magna. Suspendisse ornare, urna vestibulum elementum iaculis, ante nulla dictum tellus, ac varius mauris quam vel erat. Etiam consectetur odio consectetur condimentum efficitur. Maecenas faucibus ante eget rutrum pellentesque. Praesent ullamcorper justo in nisi congue, eget tempor sapien consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel commodo enim. Aenean auctor ipsum id consectetur molestie.</p>
+                    <p>In fermentum elit sed imperdiet suscipit. Nulla a sollicitudin justo. Nullam ullamcorper posuere velit, at imperdiet est auctor id. Vestibulum tempus lacus molestie ipsum tincidunt, sed cursus ligula viverra. Phasellus non scelerisque neque. Fusce ullamcorper volutpat felis. Sed tempor ante elit.</p>
+                </div>
+            </section>
+    
+            <section id="speaker-hanke" class="speaker">
+                <div>
+                    <img src="images/hanke.png" />
+                    <h3>John Hanke</h3>
+                    <cite>Niantic Labs</cite>
+                </div>
+                <div class="bio">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tincidunt sapien. Vivamus vel orci at quam hendrerit maximus. Proin egestas consequat ultrices. Nam laoreet ipsum tempus quam imperdiet, at suscipit massa rhoncus. Nam consequat malesuada mi, sed ultricies erat facilisis accumsan. Duis consequat, elit vitae placerat ullamcorper, augue lacus faucibus diam, volutpat placerat metus ipsum eu leo. Aliquam erat volutpat. Vestibulum urna metus, fermentum et congue nec, pulvinar sed magna. Suspendisse ornare, urna vestibulum elementum iaculis, ante nulla dictum tellus, ac varius mauris quam vel erat. Etiam consectetur odio consectetur condimentum efficitur. Maecenas faucibus ante eget rutrum pellentesque. Praesent ullamcorper justo in nisi congue, eget tempor sapien consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel commodo enim. Aenean auctor ipsum id consectetur molestie.</p>
+                    <p>In fermentum elit sed imperdiet suscipit. Nulla a sollicitudin justo. Nullam ullamcorper posuere velit, at imperdiet est auctor id. Vestibulum tempus lacus molestie ipsum tincidunt, sed cursus ligula viverra. Phasellus non scelerisque neque. Fusce ullamcorper volutpat felis. Sed tempor ante elit.</p>
+                </div>
+            </section>
+    
+            <section id="speaker-luckey" class="speaker">
+                <div>
+                    <img src="images/luckey.png" />
+                    <h3>Palmer Luckey</h3>
+                    <cite>Oculus VR</cite>
+                </div>
+                <div class="bio">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tincidunt sapien. Vivamus vel orci at quam hendrerit maximus. Proin egestas consequat ultrices. Nam laoreet ipsum tempus quam imperdiet, at suscipit massa rhoncus. Nam consequat malesuada mi, sed ultricies erat facilisis accumsan. Duis consequat, elit vitae placerat ullamcorper, augue lacus faucibus diam, volutpat placerat metus ipsum eu leo. Aliquam erat volutpat. Vestibulum urna metus, fermentum et congue nec, pulvinar sed magna. Suspendisse ornare, urna vestibulum elementum iaculis, ante nulla dictum tellus, ac varius mauris quam vel erat. Etiam consectetur odio consectetur condimentum efficitur. Maecenas faucibus ante eget rutrum pellentesque. Praesent ullamcorper justo in nisi congue, eget tempor sapien consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel commodo enim. Aenean auctor ipsum id consectetur molestie.</p>
+                    <p>In fermentum elit sed imperdiet suscipit. Nulla a sollicitudin justo. Nullam ullamcorper posuere velit, at imperdiet est auctor id. Vestibulum tempus lacus molestie ipsum tincidunt, sed cursus ligula viverra. Phasellus non scelerisque neque. Fusce ullamcorper volutpat felis. Sed tempor ante elit.</p>
+                </div>
+            </section>
+    
+            <section id="speaker-coz" class="speaker">
+                <div>
+                    <img src="images/coz.jpg" />
+                    <h3>David Coz</h3>
+                    <cite>Google</cite>
+                </div>
+                <div class="bio">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tincidunt sapien. Vivamus vel orci at quam hendrerit maximus. Proin egestas consequat ultrices. Nam laoreet ipsum tempus quam imperdiet, at suscipit massa rhoncus. Nam consequat malesuada mi, sed ultricies erat facilisis accumsan. Duis consequat, elit vitae placerat ullamcorper, augue lacus faucibus diam, volutpat placerat metus ipsum eu leo. Aliquam erat volutpat. Vestibulum urna metus, fermentum et congue nec, pulvinar sed magna. Suspendisse ornare, urna vestibulum elementum iaculis, ante nulla dictum tellus, ac varius mauris quam vel erat. Etiam consectetur odio consectetur condimentum efficitur. Maecenas faucibus ante eget rutrum pellentesque. Praesent ullamcorper justo in nisi congue, eget tempor sapien consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel commodo enim. Aenean auctor ipsum id consectetur molestie.</p>
+                    <p>In fermentum elit sed imperdiet suscipit. Nulla a sollicitudin justo. Nullam ullamcorper posuere velit, at imperdiet est auctor id. Vestibulum tempus lacus molestie ipsum tincidunt, sed cursus ligula viverra. Phasellus non scelerisque neque. Fusce ullamcorper volutpat felis. Sed tempor ante elit.</p>
+                </div>
+            </section>
+    
+            <section id="speaker-lake" class="speaker">
+                <div>
+                    <img src="images/lake.png" />
+                    <h3>Stephen Lake</h3>
+                    <cite>Thalmic Labs</cite>
+                </div>
+                <div class="bio">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tincidunt sapien. Vivamus vel orci at quam hendrerit maximus. Proin egestas consequat ultrices. Nam laoreet ipsum tempus quam imperdiet, at suscipit massa rhoncus. Nam consequat malesuada mi, sed ultricies erat facilisis accumsan. Duis consequat, elit vitae placerat ullamcorper, augue lacus faucibus diam, volutpat placerat metus ipsum eu leo. Aliquam erat volutpat. Vestibulum urna metus, fermentum et congue nec, pulvinar sed magna. Suspendisse ornare, urna vestibulum elementum iaculis, ante nulla dictum tellus, ac varius mauris quam vel erat. Etiam consectetur odio consectetur condimentum efficitur. Maecenas faucibus ante eget rutrum pellentesque. Praesent ullamcorper justo in nisi congue, eget tempor sapien consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel commodo enim. Aenean auctor ipsum id consectetur molestie.</p>
+                    <p>In fermentum elit sed imperdiet suscipit. Nulla a sollicitudin justo. Nullam ullamcorper posuere velit, at imperdiet est auctor id. Vestibulum tempus lacus molestie ipsum tincidunt, sed cursus ligula viverra. Phasellus non scelerisque neque. Fusce ullamcorper volutpat felis. Sed tempor ante elit.</p>
+                </div>
+            </section>
+        </main>
 
         <footer>
             <div class="container-fluid">
