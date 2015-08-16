@@ -26,6 +26,11 @@ body {
     font-family: "Shree", sans-serif;
 }
 
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .circular-img(@width) {
     border-radius: @width / 2px;
     -webkit-border-radius: @width / 2px;
@@ -120,25 +125,54 @@ main {
 
                 img {
                     opacity: 0.75;
-                    width: 90%;
+                    width: 75%;
                     .circular-img(500);
                 }
 
-                @media (min-resolution: 1dppx) {
+                @media (max-device-width: @screen-xs-min) {
                     img {
-                        max-width: 225px;
+                        width: 60%;
                     }
                 }
 
-                @media (min-resolution: 2dppx) {
+                @media (max-device-width: @screen-sm-min) {
                     img {
-                        max-width: 200px;
+                        width: 60%;
                     }
                 }
 
-                @media (min-resolution: 3dppx) {
+                @media (max-device-width: @screen-md-min) {
                     img {
-                        max-width: 225px;
+                        width: 60%;
+                    }
+                }
+
+                @media (max-device-width: @screen-xs-min) and (min-resolution: 2dppx) {
+                    img {
+                        width: 80%;
+                    }
+                }
+
+                @media (max-device-width: @screen-sm-min) and (min-resolution: 2dppx) {
+                    img {
+                        width: 50%;
+                    }
+                }
+
+                @media (max-device-width: @screen-md-min) and (min-resolution: 2dppx) {
+                    img {
+                        width: 50%;
+                    }
+                }
+
+                @media (max-device-width: @screen-md-min) and (min-resolution: 3dppx) {
+                    img {
+                        width: 60%;
+                    }
+                }
+                @media (max-device-width: @screen-md-min) and (min-resolution: 3dppx) and (orientation: landscape) {
+                    img {
+                        width: 40%;
                     }
                 }
             }
@@ -258,10 +292,6 @@ footer {
 
     #header #title {
         font-size: unit(@font-size-base, vmin);
-    }
-
-    #speakers-list img {
-        width: 75%;
     }
 
     .speaker {
