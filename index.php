@@ -15,7 +15,7 @@
                 e.preventDefault();
                 anchor = $(this).attr("href");
                 elem = $("section" + anchor);
-                offset = (window.innerHeight - $(elem).height()) / 2;
+                offset = (window.innerHeight - $(elem).height()) / 2 - (window.innerHeight * .12);
                 offset = offset < 0 ? 0 : offset;
                 console.log(anchor);
                 console.log(elem);
@@ -52,10 +52,11 @@
         </header>
 
          <main>
-            <section id="#blurb">
+            <section id="blurb">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-10">
                             <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h2>
                             <h2>Phasellus vel tincidunt lacus.</h2>
                         </div>
