@@ -28,6 +28,7 @@ body {
 }
 
 .circular-img(@width) {
+    border: 3px solid @alt-color-2;
     border-radius: @width / 2px;
     -webkit-border-radius: @width / 2px;
     -moz-border-radius: @width / 2px;
@@ -403,6 +404,12 @@ footer {
         .speaker cite {
             font-size: @body-font-size;
         }
+    }
+}
+
+@media (min-resolution: 3dppx) {
+    #info p {
+        font-size: @body-font-size * 3;  
     }
 }
 
