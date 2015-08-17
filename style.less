@@ -11,19 +11,20 @@
 @heading-color: #FF5335;
 @text-color: #B29C85;
 
-@body-font-size: unit(@font-size-base * 1.5, px);
+@body-font-size: unit(@font-size-base * 1.25, px);
 @header-font-size: @font-size-base * 8;
 @speaker-name-font-size: @font-size-base * 1.7;
 
 h1, h2, h3 {
     color: @heading-color;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 body {
     background-color: @background-color;
     color: @text-color;
     font-family: "Shree", sans-serif;
+    font-size: @body-font-size;
 }
 
 .circular-img(@width) {
@@ -42,7 +43,7 @@ header {
         border-top: 10px solid @alt-color-2;
         border-bottom: 10px solid @alt-color-2;
         height: 50%;
-        margin-top: 100px;
+        margin-top: 50px;
         min-height: 300px;
         max-height: 500px;
         position: relative;
@@ -66,13 +67,13 @@ header {
 
     #title {
         color: @heading-color;
-        font-size: @header-font-size;
+        font-size: @font-size-h1 * 3;
+        font-weight: 900;
         white-space: nowrap;
     }
  
     p {
-        font-size: @body-font-size;
-        text-align: center;
+        text-align: justify;
     }
 }
  
@@ -85,8 +86,7 @@ main {
         position: relative;
         width: 100%;
 
-        #blurb {
-            text-align: justify;
+        &#blurb {
             -moz-text-align-last: center;
             text-align-last: center;
         
@@ -95,6 +95,7 @@ main {
             }
 
             p {
+                text-align: justify;
                 margin-top: 5%;
             }
         }
@@ -103,9 +104,8 @@ main {
             margin-top: 5%;
 
             p {
-                font-weight: bold;
                 margin: 0px;
-                text-align: center !important;
+                text-align: center;
             }
         
             p:nth-child(2) {
@@ -120,7 +120,7 @@ main {
 
                 img {
                     opacity: 0.75;
-                    width: 75%;
+                    width: 50%;
                     .circular-img(500);
                 }
 
@@ -136,9 +136,15 @@ main {
                     }
                 }
 
-                @media (max-device-width: @screen-md-min) {
+                @media (min-device-width: @screen-md-min) {
                     img {
                         width: 60%;
+                    }
+                }
+
+                @media (min-device-width: @screen-md-min) {
+                    img {
+                        width: 70%;
                     }
                 }
 
@@ -172,6 +178,13 @@ main {
                     }
                 }
 
+                @media (min-device-width: @screen-md-min) and (min-resolution: 2dppx) and (orientation: landscape) {
+                    img {
+                        width: 75%;
+                    }
+                }
+
+
                 @media (min-resolution: 3dppx) and (orientation: landscape) {
                     img {
                         width: 40%;
@@ -180,7 +193,6 @@ main {
             }
 
             h4 {
-                font-size: @font-size-h3;
                 white-space: nowrap;
             }
 
@@ -220,83 +232,79 @@ main {
                 img {
                    width: 50%;
                 }
-            }
 
-            @media (max-device-width: @screen-xs-min) and (min-resolution: 2dppx) {
-                img {
-                    width: 80%;
+                @media (min-resolution: 1.2dppx) {
+                    @media (orientation: landscape) {
+                        img {
+                            width: 25%;
+                        }
+                    }
                 }
             }
 
-            @media (max-device-width: @screen-sm-min) and (min-resolution: 2dppx) {
+            @media (min-device-width: @screen-md-min) {
                 img {
-                    width: 50%;
+                   width: 15%;
                 }
             }
 
-            @media (max-device-width: @screen-md-min) and (min-resolution: 2dppx) {
-                img {
-                    width: 35%;
+            @media (min-resolution: 2dppx) {
+                @media (max-device-width: @screen-xs-min) {
+                    img {
+                        width: 80%;
+                    }
+                }
+
+                @media (max-device-width: @screen-sm-min) {
+                    img {
+                        width: 50%;
+                    }
+                }
+
+                @media (max-device-width: @screen-md-min) {
+                    img {
+                       width: 35%;
+                    }
+
+                    @media (orientation: landscape) {
+                        img {
+                           width: 20%;
+                        }
+                    }
                 }
             }
 
-            @media (max-device-width: @screen-md-min) and (min-resolution: 3dppx) {
-                img {
-                    width: 40%;
+            @media (min-resolution: 3dppx) {
+                 @media (max-device-width: @screen-md-min) {
+                    img {
+                        width: 40%;
+                    }
+                    
+                    @media (orientation: landscape) {
+                        img {
+                            width: 20%;
+                        }
+                    }           
                 }
             }
-
-            @media (max-device-width: @screen-md-min) and (min-resolution: 2dppx) and (orientation: landscape) {
-                img {
-                    width: 20%;
-                }
-            }
-
-            @media (max-device-width: @screen-md-min) and (min-resolution: 3dppx) and (orientation: landscape) {
-                img {
-                    width: 20%;
-                }
-            }
-
+               
             .bio {
                 margin-top: 2% !important;
 
                 p {
                     margin: 0 auto;
+                    text-align: justify;
                     width: 80%;
                 }
-            }
-    
-            @media (min-width: @screen-sm) and (max-width: @screen-md) {
-                .bio p {
-                    margin-bottom: 20px;
+
+                p:not(:first-child) {
+                    margin-top: 2%;
                 }
             }
-        }
-
-        p {
-            font-size: @body-font-size !important;
         }
     }
 }
  
- 
- 
- 
- 
- 
- 
- 
- section div:nth-child(2) p {
-     text-align: justify;
-    -moz-text-align-last: center;
-    text-align-last: center;
-}
-
-section:not(:nth-child(1)) > div {
-    margin: 0 auto;
-}
-
 footer {
     position: relative;
 
@@ -315,27 +323,79 @@ footer {
     }
 }
 
-@media (min-resolution: 2dppx) {
-    body { 
-        font-size: @body-font-size * 1.5;
+@media (min-resolution: 1dppx) {
+   @media (max-device-width: @screen-xs-min) {
+        h2 { font-size: unit(@font-size-h2 / 6, vmin); }
+        h3 { font-size: unit(@font-size-h3 / 6, vmin); }
+        h4 { font-size: unit(@font-size-h4 / 5, vmin); }
+
+        .bio {
+            font-size: @body-font-size * .8;
+        }
     }
 
-    h2 { font-size: @font-size-h2 * 1.5; }
-    h3 { font-size: @font-size-h3 * 1.5; }
-    h4 { font-size: @font-size-h4 * 1.5 * 1.5; }
+    @media (min-device-width: @screen-md-min) {
+        body {
+            font-size: @body-font-size * 1.5;
+        }
+    }
+}
 
-    #header #title {
-        font-size: unit(@font-size-base, vmin);
+@media (min-resolution: 1.2dppx) {
+    .bio {
+        font-size: @body-font-size * .8;
+    }
+}
+
+@media (min-resolution: 1.4dppx) {
+    cite {
+        font-size: @body-font-size * .6;
+    }
+
+    .bio {
+        font-size: @body-font-size * .75;
+    }
+}
+
+@media (min-resolution: 2dppx) {
+    body { 
+        font-size: @body-font-size * 1.3;
+    }
+
+    h2 { font-size: unit(@font-size-h2 / 5, vmin) }
+    h3 { font-size: unit(@font-size-h3 / 5, vmin) }
+    h4 { font-size: unit(@font-size-h4 / 5, vmin) }
+
+    header {
+        #title {
+           font-size: unit(@font-size-base, vmin);
+        }
     }
 
     .speaker {
+        .bio {
+            font-size: @body-font-size * .8;
+        }
+
+        @media (min-device-width: @screen-md-min) {
+            .bio {
+                font-size: @body-font-size * 1.3;
+            }
+        }
+
         cite {
             font-size: @body-font-size * .6;
         }
 
-        .bio p {
-            /* I have no flippin' idea why this needs to go smaller */
-            font-size: @body-font-size * .7;
+    }
+
+    @media (min-device-width: @screen-sm-min) {
+        #info p {
+            font-size: @body-font-size * 2;
+        }
+
+        .speaker cite {
+            font-size: @body-font-size;
         }
     }
 }
