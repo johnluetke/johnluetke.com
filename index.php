@@ -46,8 +46,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-1"></div>
-                    <p class="col-xs-10">Input devices are taking a step backwards: from the high-tech to the natural. Can society unlearn a 30 year old paradigm in favor of a more natural and available one?</p>
-                </div>
+                    <p class="col-xs-10">Input devices are taking a step "backwards": from the high-tech to the natural.</div>
             </div>
         </header>
 
