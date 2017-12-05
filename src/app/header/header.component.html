@@ -1,0 +1,15 @@
+<header (click)="toggle($event)" [ngClass]="{'expanded': expanded === true}">
+  <div class="center">
+    <div class="top">
+      <ul class="nav">
+        <li routerLinkActive="active"><a routerLink="/about">About</a></li>
+        <li routerLinkActive="active"><a routerLink="/portfolio">Portfolio</a></li>
+        <li routerLinkActive="active"><a routerLink="/resume">Resume</a></li>
+        <li routerLinkActive="active"><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="left">John Luetke</div>
+    <div class="right">Software Engineer &amp;<br>Human-Centered Designer</div>
+  </div>
+  <div class="avatar"></div>
+</header>

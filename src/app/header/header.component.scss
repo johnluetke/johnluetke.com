@@ -1,0 +1,104 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+header {
+
+  background-color: $header-bg-color;
+  border-bottom: 5px solid $header-border-color;
+  -webkit-box-shadow: 0px 3px 25px 10px rgba(0,0,0,0.17);
+  -moz-box-shadow: 0px 3px 25px 10px rgba(0,0,0,0.17);
+  box-shadow: 0px 3px 25px 10px rgba(0,0,0,0.17);
+  color: #FAFAFA;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 100px;
+  height: 100px;
+  left: 0;
+  min-height: 100px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  transition: height $header-transition-time;
+  -moz-transition: height $header-transition-time;
+  -ms-transition: height $header-transition-time;
+  -o-transition: height $header-transition-time;
+  -webkit-transition: height $header-transition-time;
+  width: 100%;
+  z-index: 100;
+
+  .avatar {
+    background-image: url("~assets/avatar.png");
+    background-size: 150px;
+    height: 150px;
+    left: 50%;
+    margin-left: -75px;
+    margin-top: 25px;
+    margin-top: 50px;
+    position: fixed;
+    width: 150px;
+
+    @media only screen and (max-width: 600px) {
+      left: 292.5px;
+    }
+  }
+  .center {
+    width: 100%;
+    max-width: 800px;
+    min-width: 600px;
+    margin: 0 auto;
+
+    -webkit-transition: margin-top $header-transition-time;
+    -moz-transition: margin-top $header-transition-time;
+    -ms-transition: margin-top $header-transition-time;
+    -o-transition: margin-top $header-transition-time;
+    transition: margin-top $header-transition-time;
+  }
+  .top {
+    text-align: center;
+    margin-top: -50px;
+  }
+  .left, .right {
+    position: relative;
+    top: 40px;
+    width: 185px;
+    /* offset for hidden top */
+    top: 90px;
+  }
+  .left {
+    float: left;
+    font-size: 2.25em;
+    left: 5%;
+  }
+  .right {
+    float: right;
+    line-height: 1.15em;
+    right: 5%;
+  }
+
+  &.expanded {
+    height: $header-expanded-height;
+
+    .center {
+      margin-top: 100px;
+    }
+  }
+
+  ul.nav {
+    li {
+      display: inline;
+      margin-left: 25px;
+      margin-right: 25px;
+      text-transform: uppercase;
+
+      &.active, &:hover {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 3px
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
