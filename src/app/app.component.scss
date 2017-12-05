@@ -1,2 +1,13 @@
 @import '~sass/variables';
 @import '~sass/mixins';
+
+body {
+  background-color: $header-bg-color;
+}
+
+.content {
+  margin-top: 125px;
+
+  margin-left: 25px;
+  margin-right: 25px;
+}
