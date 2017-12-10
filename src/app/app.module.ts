@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 
+import { UiService } from './ui.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { ResumeComponent } from './resume/resume.component';
     AppRoutingModule,
     BrowserModule
   ],
-  providers: [],
+  providers: [UiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
