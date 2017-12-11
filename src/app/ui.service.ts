@@ -21,7 +21,7 @@ export class UiService {
     this.headerExpandedChange.next(this.headerExpanded);
   }
 
-  isHeaderVisible() {
+  isHeaderExpanded() {
     return this.headerExpanded;
   }
 }
