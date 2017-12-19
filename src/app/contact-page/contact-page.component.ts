@@ -4,10 +4,10 @@ import { UiService } from '../ui.service';
 
 @Component({
   selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  templateUrl: './contact-page.component.html',
+  styleUrls: ['./contact-page.component.scss']
 })
-export class ContactComponent extends PageComponent implements OnInit {
+export class ContactPageComponent extends PageComponent implements OnInit {
 
   constructor(protected _uiService: UiService) {
     super(_uiService);

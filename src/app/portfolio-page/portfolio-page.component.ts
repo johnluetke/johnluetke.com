@@ -5,11 +5,11 @@ import { UiService } from '../ui.service';
 import { Project } from '../project/project.component';
 
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  selector: 'portfolio-page',
+  templateUrl: './portfolio-page.component.html',
+  styleUrls: ['./portfolio-page.component.scss']
 })
-export class PortfolioComponent extends PageComponent implements OnInit {
+export class PortfolioPageComponent extends PageComponent implements OnInit {
 
   private portfolio: Project[];
 
