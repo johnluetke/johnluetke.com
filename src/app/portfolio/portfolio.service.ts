@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { DomSanitizer } from '@angular/platform-browser';
-import { Project } from './project';
+import { Project } from '../project.project.component';
 
 @Injectable()
 export class PortfolioService {

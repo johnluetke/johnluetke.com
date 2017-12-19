@@ -1,0 +1,26 @@
+div {
+  &.cover {
+    display: block;
+    position: relative;
+    height: 175px;
+    margin: 10px;
+    color: black;
+
+    .overlay {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .title {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 10px;
+    }
+  }
+}

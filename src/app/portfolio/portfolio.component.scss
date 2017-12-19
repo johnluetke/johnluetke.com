@@ -1,0 +1,26 @@
+div {
+
+  &.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+  }
+
+  &.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  &.item {
+    width: 33%;
+
+    @media screen and (max-width: 1000px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+  }
+}

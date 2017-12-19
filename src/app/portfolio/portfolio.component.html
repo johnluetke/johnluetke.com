@@ -1,3 +1,7 @@
-<p>
-  portfolio works!
-</p>
+<div class="wrapper">
+  <div class="grid">
+    <div *ngFor="let project of portfolio" class="item">
+      <app-project [project]=project></app-project>
+    </div>
+  </div>
+</div>

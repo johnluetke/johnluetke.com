@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -9,7 +10,9 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 
+import { PortfolioService } from './portfolio/portfolio.service';
 import { UiService } from './ui.service';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +21,18 @@ import { UiService } from './ui.service';
     ContactComponent,
     AboutComponent,
     PortfolioComponent,
-    ResumeComponent
+    ResumeComponent,
+    ProjectComponent
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [UiService],
+  providers: [
+    PortfolioService,
+    UiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
