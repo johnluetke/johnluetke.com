@@ -1,0 +1,29 @@
+[
+  {
+    "name": "SIM: The Social Robot",
+    "website": "simthesocialrobot.com",
+    "startDate": "2016-08-30",
+    "endDate": null,
+    "members": [],
+    "awards": [],
+    "responsibilities": [],
+    "description": "",
+    "color": "#ABCDEF",
+    "coverPhotoURL": "/assets/projects/sim/cover.png"
+  },
+  {
+    "name": "test 1"
+  },
+  {
+    "name": "test 2"
+  },
+  {
+    "name": "test 3"
+  },
+  {
+    "name": "test 4"
+  },
+  {
+    "name": "test 5"
+  }
+]
