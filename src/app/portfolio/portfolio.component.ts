@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { PageComponent } from '../page/page.component';
 import { PortfolioService } from './portfolio.service';
+import { UiService } from '../ui.service';
 import { Project } from '../project/project.component';
 
 @Component({
@@ -7,11 +9,12 @@ import { Project } from '../project/project.component';
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioComponent extends PageComponent implements OnInit {
 
   private portfolio: Project[];
 
-  constructor(private portfolioService: PortfolioService) {
+  constructor(private portfolioService: PortfolioService, protected _uiService: UiService) {
+    super(_uiService);
   }
 
   ngOnInit() {
