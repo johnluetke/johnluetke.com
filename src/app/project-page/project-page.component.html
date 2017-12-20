@@ -1,0 +1,89 @@
+
+<div class="wrapper">
+
+  <div class="cover" [style.background-image]="coverImage">
+    <div class="overlay" [style.background-color]="rgb2rgba(project.color, 0.5)"></div>
+    <div class="title">
+      <h1>{{ project.name }}</h1>
+      <h2>{{ project.tagline }}</h2>
+    </div>
+  </div>
+
+  <div class="summary">
+    <p [innerHTML]="summary"></p>
+  </div>
+
+  <div class="glance">
+    <div class="title">AT A GLANCE</div>
+
+    <div *ngIf="showGlance('website')" class="website">
+      <div class="oi oi-globe"></div>
+      <a href="{{ project.website }}" class="url">{{ project.website | prettyUrl }}</a>
+      <a href="{{ project.website }}" class="title">Project website</a>
+    </div>
+
+    <div *ngIf="showGlance('status')" class="status">
+      <span class="title">Status:</span>
+      <div class="oi oi-clock"></div>
+      <div *ngIf="ongoing" title="Since {{ project.startDate | date: 'MMMM y'}}">
+        Ongoing
+        <span>
+          since {{ project.startDate | date: 'MMMM y'}}
+        </span>
+      </div>
+      <div *ngIf="!ongoing" title="From {{ project.startDate | date: 'MMMM y' }} to {{ project.endDate | date: 'MMMM y'}}">
+        Completed
+      </div>
+    </div>
+
+    <div *ngIf="showGlance('responsibilities')" class="responsibilities">
+      <span class="title">Responsibilities:</span>
+      <ul>
+        <li *ngFor="let responsibility of project.responsibilities">{{ responsibility }}</li>
+      </ul>
+    </div>
+
+    <div *ngIf="showGlance('awards')" class="awards">
+      <span class="title">Awards:</span>
+      <span class="oi oi-badge" *ngIf="project.awards.length >= 5"></span>
+      <div class="icons" *ngIf="project.awards.length < 5">
+        <span class="oi oi-badge" *ngFor="let i of Arr(project.awards.length).fill(1)"></span>
+      </div>
+      <div class="count"><span *ngIf="project.awards.length >= 5">{{ project.awards.length }}</span> Awards Earned</div>
+    </div>
+  </div>
+
+  <div class="description" [innerHTML]="description"></div>
+
+  <div class="awards" *ngIf="project.awards.length > 0">
+    <h3><a name="awards">Awards</a></h3>
+    <div class="list">
+      <div *ngFor="let award of project.awards" class="item award">
+        <div class="oi oi-badge"></div>
+        <div class="title"><a href="{{ award.link }}" target="_blank">{{ award.name }}</a></div>
+        <div>{{ award.event }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery" *ngIf="project.gallery.length > 0">
+    <h3><a name="gallery">Gallery</a></h3>
+    <div class="list">
+      <div *ngFor="let item of project.gallery" class="item image">
+        <div class="oi oi-image"></div>
+        <div class="title"><a href="{{ item.link }}" target="_blank">{{ item.caption }}</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="collaborators" *ngIf="project.members.length > 0">
+    <h3><a name="gallery">Collaborators</a></h3>
+    <div class="list">
+      <div *ngFor="let member of project.members" class="item member">
+        <div class="oi oi-person"></div>
+        <div class="title">{{ member.name }}</div>
+      </div>
+    </div>
+  </div>
+
+</div>

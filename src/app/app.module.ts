@@ -13,6 +13,7 @@ import { ResumePageComponent } from './resume-page/resume-page.component';
 import { PortfolioService } from './portfolio-page/portfolio.service';
 import { UiService } from './ui.service';
 import { ProjectComponent } from './project/project.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
 import { PrettyUrlPipe } from './pretty-url.pipe';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { PrettyUrlPipe } from './pretty-url.pipe';
     PortfolioPageComponent,
     ResumePageComponent,
     ProjectComponent,
+    ProjectPageComponent,
     PrettyUrlPipe
   ],
   imports: [

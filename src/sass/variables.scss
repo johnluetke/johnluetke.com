@@ -4,3 +4,9 @@ $header-bg-color: rgb(35, 136, 219);
 $header-border-color: rgb(35, 114, 219);
 $header-expanded-height: 200px;
 $header-transition-time: 0.3s;
+
+$screen: (
+  small: 768px,
+  medium: 992px,
+  large: 1220px
+)

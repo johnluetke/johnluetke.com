@@ -4,13 +4,15 @@ import { RouterModule, Routes }  from '@angular/router';
 import { AboutPageComponent }     from './about-page/about-page.component';
 import { ContactPageComponent }   from './contact-page/contact-page.component';
 import { PortfolioPageComponent } from './portfolio-page/portfolio-page.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
 import { ResumePageComponent}     from './resume-page/resume-page.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
-  { path: 'portfolio', component: PortfolioPageComponent },
+  { path: 'portfolio', component: PortfolioPageComponent, pathMatch: 'full' },
+  { path: 'portfolio/:name', component: ProjectPageComponent },
   { path: 'resume', component: ResumePageComponent }
 ];
 
