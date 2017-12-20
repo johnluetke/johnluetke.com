@@ -20,18 +20,7 @@ export class ProjectComponent implements OnInit {
   }
 
   rgb2rgba(color, opacity) {
-    if (color === undefined) {
-      return color;
-    }
-
-    const rgb = color.match(/^rgb\((\d+),\s+?(\d+),\s+?(\d+)\)$/);
-
-    if (rgb != null) {
-      color = 'rgba(' + rgb[1] + ', ' + rgb[2] + ', ' + rgb[3] + ', ' + opacity + ')';
-      return color;
-    } else {
-      console.error('bad rgb value: ' + color);
-    }
+    return ProjectUtil.rgb2rgba(color, opacity);
   }
 }
 
@@ -51,5 +40,20 @@ export interface Project {
 export class ProjectUtil {
   static getUrlNameFromProject(project: Project): string {
     return project.name.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/[^a-z0-9]/g, '-');
+  }
+
+  static rgb2rgba(color, opacity) {
+    if (color === undefined || color === null) {
+      return color;
+    }
+
+    const rgb = color.match(/^rgb\((\d+),\s+?(\d+),\s+?(\d+)\)$/);
+
+    if (rgb != null) {
+      color = 'rgba(' + rgb[1] + ', ' + rgb[2] + ', ' + rgb[3] + ', ' + opacity + ')';
+      return color;
+    } else {
+      console.error('bad rgb value: ' + color);
+    }
   }
 }
