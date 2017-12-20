@@ -2,7 +2,6 @@
 @import '~sass/mixins';
 
 header {
-
   background-color: $header-bg-color;
   border-bottom: 5px solid $header-border-color;
   -webkit-box-shadow: 0px 3px 25px 10px rgba(0,0,0,0.17);
@@ -59,10 +58,9 @@ header {
   }
   .left, .right {
     position: relative;
-    top: 40px;
     width: 185px;
     /* offset for hidden top */
-    top: 90px;
+    top: 70px;
   }
   .left {
     float: left;
@@ -73,6 +71,7 @@ header {
     float: right;
     line-height: 1.15em;
     right: 5%;
+    top: 75px;
   }
 
   &.expanded {
@@ -83,21 +82,26 @@ header {
     }
   }
 
-  ul.nav {
-    li {
-      display: inline;
-      margin-left: 25px;
-      margin-right: 25px;
-      text-transform: uppercase;
+  ul {
+    &.nav {
+      display: flex;
+      justify-content: center;
 
-      &.active, &:hover {
-        border-bottom: 1px solid #fff;
-        padding-bottom: 3px
-      }
+      li {
+        display: inline-block;
+        margin-left: 25px;
+        margin-right: 25px;
+        text-transform: uppercase;
 
-      a {
-        color: white;
-        text-decoration: none;
+        &.active, &:hover {
+          border-bottom: 1px solid #fff;
+          padding-bottom: 3px
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }
