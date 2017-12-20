@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Project } from '../project.project.component';
+import { Project, ProjectUtil } from '../project/project.component';
 
 @Injectable()
 export class PortfolioService {
@@ -14,5 +14,15 @@ export class PortfolioService {
       .subscribe(data => {
         callback(data);
       });
+  }
+
+  fetchProject(url: String, callback: Function): void {
+    this.fetch(function(projects: Project[]) {
+      for (let project of projects) {
+        if (url === ProjectUtil.getUrlNameFromProject(project)) {
+          callback(project);
+        }
+      }
+    });
   }
 }
