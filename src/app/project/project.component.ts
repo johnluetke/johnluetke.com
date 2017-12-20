@@ -9,14 +9,14 @@ import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 export class ProjectComponent implements OnInit {
 
   @Input() project: Project;
-  coverImage: string;
+  coverImage: SafeStyle;
   urlName: string;
 
   constructor(private sanitizationService: DomSanitizer) { }
 
   ngOnInit() {
-    this.coverImage = this.sanitizationService.bypassSecurityTrustStyle('url(' + this.project.coverPhotoURL ')');
-    this.urlName = this.project.name.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/[^a-z0-9]/g, '-');
+    this.coverImage = this.sanitizationService.bypassSecurityTrustStyle('url(' + this.project.coverPhotoURL + ')');
+    this.urlName = ProjectUtil.getUrlNameFromProject(this.project);
   }
 
   rgb2rgba(color, opacity) {
@@ -46,4 +46,10 @@ export interface Project {
   responsibilities: string[];
   startDate: Date;
   website: string;
+}
+
+export class ProjectUtil {
+  static getUrlNameFromProject(project: Project): string {
+    return project.name.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/[^a-z0-9]/g, '-');
+  }
 }
