@@ -1,15 +1,51 @@
 [
   {
-    "name": "SIM: The Social Robot",
-    "website": "simthesocialrobot.com",
-    "startDate": "2016-08-30",
-    "endDate": null,
-    "members": [],
-    "awards": [],
-    "responsibilities": [],
-    "description": "",
+    "awards": [
+      {
+        "event": "UW Maker Summit 2017",
+        "name": "Winner - Gizmos (Graduate)",
+        "link": "http://www.dailyuw.com/news/article_113480d8-28a0-11e7-9650-a79c09a75a1d.html"
+      }, {
+        "event": "UW HCDE Open House 2017",
+        "name": "Judge's Honorable Mention - Technology",
+        "link": "https://www.hcde.washington.edu/node/1655"
+      }, {
+        "event": "UW HCDE Graduate Award 2017",
+        "name": "Graduate Award for Innovation",
+        "link": "https://www.hcde.washington.edu/news/2017-graduation-and-awards-ceremony"
+      }
+    ],
     "color": "rgb(249, 165, 27)",
-    "coverPhotoURL": "/assets/projects/sim/cover.png"
+    "coverPhotoURL": "/assets/projects/sim/cover.png",
+    "description": "<div class='h3'>Design Question</div><p>How might we design natural and intuitive interactions between humans and robots?</p><div class='h3'>Technical Details</div><p>SIM has two major components: an Android smartphone that functions as a face, and a body made up of three Dynamixel AX-18A servo motors powered by a Raspberry Pi 3.</p><p>SIM uses the Android smartphone as its central processor. The screen acts as the robot’s face, while the camera is used to capture a live video of a user. Onboard emotional processing software analyzes the user’s facial expressions from this video and provides information about the user’s emotions. This information is then passed through a social interaction model which generates an appropriate response for the robot. The chosen response is composed of an animated facial expression that is rendered on the smartphone’s screen, and a message containing desired body movements that is transmitted to the Raspberry Pi via Bluetooth.</p><p>The body’s servos are positioned in such a way that allows for 3 degrees of motion: one on the pitch axis and two on the yaw axis. The message from the smartphone contains instructions for each servo, resulting in a physical animation that corresponds with SIM’s facial expression.</p>",
+    "endDate": null,
+    "gallery": [
+      {
+        "image": "/assests/projects/sim/IMG_1882.jpg",
+        "caption": ""
+      }
+    ],
+    "members": [
+      {
+        "name": "Sahil Anand"
+      },
+      {
+        "name": "Nikhil Venkatesh"
+      },
+      {
+        "name": "Dorothy Wong"
+      }
+    ],
+    "name": "SIM: The Social Robot",
+    "responsibilities": [
+      "Prototype Engineering",
+      "Software Engineering",
+      "User test moderation"
+    ],
+    "startDate": "2016-08-30",
+    "summary": "SIM is a functional prototype of a socially intelligent robot that can understand and respond to expressions on a user's face. SIM was built for the capstone project of my graduate degree from the <a href='https://hcde.uw.edu'>Human-Centered Design and Engineering</a> program at the <a href='https://uw.edu'>University of Washington</a>.",
+    "tagline": "Designing Expressive Behaviors to Improve Human-Robot Relationships",
+    "website": "http://simthesocialrobot.com"
   },
   {
     "name": "test 1"

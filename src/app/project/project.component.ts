@@ -25,16 +25,34 @@ export class ProjectComponent implements OnInit {
 }
 
 export interface Project {
-  awards: string[];
+  awards: Award[];
   color: string;
-  coverPhotoURL: SafeStyle;
+  coverPhotoURL: string;
   description: string;
   endDate: Date;
-  members: string[];
+  gallery: GalleryItem[];
+  members: Person[];
   name: string;
   responsibilities: string[];
   startDate: Date;
+  summary: string;
+  tagline: string;
   website: string;
+}
+
+export interface Award {
+  event: string;
+  name: string;
+  link: string;
+}
+
+export interface GalleryItem {
+  image: string;
+  caption: string;
+}
+
+export interface Person {
+  name: string;
 }
 
 export class ProjectUtil {
