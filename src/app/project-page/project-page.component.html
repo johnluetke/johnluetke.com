@@ -1,4 +1,3 @@
-
 <div class="wrapper">
 
   <div class="cover" [style.background-image]="coverImage">
@@ -21,7 +20,8 @@
 
     <div *ngIf="showGlance('status')" class="status">
       <span class="title">Status:</span>
-      <div class="oi oi-clock"></div>
+      <div *ngIf="ongoing" class="oi oi-clock"></div>
+      <div *ngIf="!ongoing" class="oi oi-task"></div>
       <div *ngIf="ongoing" title="Since {{ project.startDate | date: 'MMMM y'}}">
         Ongoing
         <span>
@@ -29,14 +29,8 @@
         </span>
       </div>
       <div *ngIf="!ongoing" title="From {{ project.startDate | date: 'MMMM y' }} to {{ project.endDate | date: 'MMMM y'}}">
-        Completed
+        Completed {{ project.endDate | date: 'MMMM y'}}
       </div>
-    </div>
-
-    <div *ngIf="showGlance('responsibilities')" class="responsibilities">
-      <ul>
-        <li *ngFor="let responsibility of project.responsibilities"><span class="oi oi-{{ getIconName(responsibility) }}"></span>{{ responsibility }}</li>
-      </ul>
     </div>
 
     <div *ngIf="showGlance('awards')" class="awards">
@@ -46,6 +40,12 @@
         <span class="oi oi-badge" *ngFor="let i of Arr(project.awards.length).fill(1)"></span>
       </div>
       <div class="count"><span *ngIf="project.awards.length >= 5">{{ project.awards.length }}</span> Awards Earned</div>
+    </div>
+
+    <div *ngIf="showGlance('responsibilities')" class="responsibilities">
+      <ul>
+        <li *ngFor="let responsibility of project.responsibilities"><span class="oi oi-{{ getIconName(responsibility) }}"></span>{{ responsibility }}</li>
+      </ul>
     </div>
   </div>
 
