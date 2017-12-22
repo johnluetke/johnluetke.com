@@ -199,10 +199,44 @@ div {
     }
   }
 
+  &.description {
+    em {
+      padding-right: 0.125em;
+    }
+
+    .inline-image {
+      &.left {
+        float: left;
+        padding-right: 2em;
+      }
+
+      &.right {
+        float: right;
+        padding-left: 2em;
+      }
+
+      .caption {
+        text-align: center;
+        font-style: italic;
+        color: #777;
+        padding: .5em;
+      }
+
+      img {
+        border-radius: 10px;
+        box-shadow: 0 0 48px rgba(0,0,0,.2);
+      }
+    }
+  }
+
   &.awards {
     a[target] {
       color: black
     }
+  }
+
+  &.collaborators {
+    display: none !important; 
   }
 }
 
