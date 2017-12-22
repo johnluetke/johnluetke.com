@@ -1,5 +1,7 @@
 div {
   &.cover {
+    background-position: center top;
+    background-size: cover;
     display: block;
     position: relative;
     height: 175px;

@@ -10,17 +10,17 @@ div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-  }
 
-  &.item {
-    width: 33%;
+    .item {
+      width: 33%;
 
-    @media screen and (max-width: 1000px) {
-      width: 50%;
-    }
+      @media screen and (max-width: 1000px) {
+        width: 50%;
+      }
 
-    @media screen and (max-width: 700px) {
-      width: 100%;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      }
     }
   }
 }
