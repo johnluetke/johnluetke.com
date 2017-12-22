@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Project, ProjectUtil } from '../project/project.component'
 import { PortfolioService } from '../portfolio-page/portfolio.service';
@@ -7,7 +7,8 @@ import { DomSanitizer, SafeStyle, SafeHtml } from '@angular/platform-browser';
 @Component({
   selector: 'project-page',
   templateUrl: './project-page.component.html',
-  styleUrls: ['./project-page.component.scss']
+  styleUrls: ['./project-page.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProjectPageComponent implements OnInit {
 
@@ -47,6 +48,19 @@ export class ProjectPageComponent implements OnInit {
     });
   }
 
+  getIconName(responsibility: string) {
+    switch (responsibility) {
+      case "Software Engineering":
+        return "code";
+      case "Physical Prototyping":
+        return "wrench";
+      case "User test moderation":
+        return "clipboard";
+      default:
+        return "person";
+    }
+  }
+
   rgb2rgba(color, opacity) {
     return ProjectUtil.rgb2rgba(color, opacity);
   }
@@ -62,7 +76,6 @@ export class ProjectPageComponent implements OnInit {
         visible = true;
     }
 
-    console.log("glance: '" + glance + "' -> " + visible);
     return visible;
   }
 

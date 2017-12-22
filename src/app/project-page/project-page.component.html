@@ -14,12 +14,9 @@
   </div>
 
   <div class="glance">
-    <div class="title">AT A GLANCE</div>
-
     <div *ngIf="showGlance('website')" class="website">
       <div class="oi oi-globe"></div>
       <a href="{{ project.website }}" class="url">{{ project.website | prettyUrl }}</a>
-      <a href="{{ project.website }}" class="title">Project website</a>
     </div>
 
     <div *ngIf="showGlance('status')" class="status">
@@ -37,9 +34,8 @@
     </div>
 
     <div *ngIf="showGlance('responsibilities')" class="responsibilities">
-      <span class="title">Responsibilities:</span>
       <ul>
-        <li *ngFor="let responsibility of project.responsibilities">{{ responsibility }}</li>
+        <li *ngFor="let responsibility of project.responsibilities"><span class="oi oi-{{ getIconName(responsibility) }}"></span>{{ responsibility }}</li>
       </ul>
     </div>
 
