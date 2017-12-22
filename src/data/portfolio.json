@@ -21,8 +21,24 @@
     "endDate": null,
     "gallery": [
       {
-        "image": "/assests/projects/sim/IMG_1882.jpg",
-        "caption": ""
+        "url": "/assets/projects/sim/IMG_1882.JPG",
+        "title": "John, Nikhil, Dorothy and Sahil after SIM won the Gizmos - Graduate prizes at the 2017 UW Maker Summit"
+      },
+      {
+        "url": "/assets/projects/sim/IMG_1880.JPG",
+        "title": "2017 UW Maker Summit Awards for Gizmos - Graduate."
+      },
+      {
+        "url": "/assets/projects/sim/SIM_Poster.pdf",
+        "title": "24\"x36\" poster describing SIM."
+      },
+      {
+        "url": "/assets/projects/sim/SIM_Process_Book.pdf",
+        "title": "SIM Process Book."
+      },
+      {
+        "url": "/assets/projects/sim/35434356376_d14bcde884_o.jpg",
+        "title": "HCDE Chair David McDonald with Nikhil, Dorothy and John after receiving the Judge's Honorable Mention as the 2017 HCDE Open House."
       }
     ],
     "members": [
