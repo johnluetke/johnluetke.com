@@ -22,6 +22,14 @@ export class PortfolioPageComponent extends PageComponent implements OnInit {
     self.portfolio = [];
     this.portfolioService.fetch(function(projects: Project[]) {
       self.portfolio = projects;
+
+      self.portfolio.sort(function(a, b) {
+        if (a.startDate > b.startDate)
+          return -1;
+        if (a.startDate < b.startDate)
+          return 1;
+        return 0;
+      });
     });
   }
 }
