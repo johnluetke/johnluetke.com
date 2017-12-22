@@ -7,17 +7,16 @@
     display: inline-block;
     text-align: center;
     padding: 10px;
-    width: 33%;
 
     img {
       max-height: 150px;
       border-radius: 10px;
       box-shadow: 0px 1px #bbb;
+      cursor: pointer;
     }
   }
 
   .item:first-child {
-    padding: 0 10px 0 0;
   }
 
   .shadow {

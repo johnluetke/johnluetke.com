@@ -14,13 +14,38 @@ p {
   margin: 10px 0;
 }
 
+blockquote {
+  width: 67%;
+  max-width: 500px;
+  float: right;
+
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  &:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  p {
+    display: inline;
+  }
+}
+
 div {
   &.wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
-    > div:not(.glance) {
+    > div:not(.glance):not(.description) {
       width: 100%;
       padding: 10px 0;
       display: flex;
@@ -35,10 +60,23 @@ div {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 100%;
 
         .item {
           text-align: center;
-          width: 33%;
+          width: 50%;
+
+          @media screen and (min-width: map-get($screen, medium)) {
+            width: 33%;
+          }
+
+          @media screen and (min-width: map-get($screen, large)) {
+            width: 25%;
+          }
+
+          @media screen and (min-width: map-get($screen, xlarge)) {
+            width: 20%;
+          }
 
           .oi {
             font-size: 5em;
