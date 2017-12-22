@@ -68,12 +68,7 @@
 
   <div class="gallery" *ngIf="project.gallery.length > 0">
     <h3><a name="gallery">Gallery</a></h3>
-    <div class="list">
-      <div *ngFor="let item of project.gallery" class="item image">
-        <div class="oi oi-image"></div>
-        <div class="title"><a href="{{ item.link }}" target="_blank">{{ item.caption }}</a></div>
-      </div>
-    </div>
+    <gallery [items]="project.gallery"></gallery>
   </div>
 
   <div class="collaborators" *ngIf="project.members.length > 0">

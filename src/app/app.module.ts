@@ -1,3 +1,4 @@
+import 'hammerjs';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +16,8 @@ import { UiService } from './ui.service';
 import { ProjectComponent } from './project/project.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import { PrettyUrlPipe } from './pretty-url.pipe';
+import { GalleryComponent } from './gallery/gallery.component';
+import { NgxImageGalleryModule } from 'ngx-image-gallery';
 
 @NgModule({
   declarations: [
@@ -26,12 +29,14 @@ import { PrettyUrlPipe } from './pretty-url.pipe';
     ResumePageComponent,
     ProjectComponent,
     ProjectPageComponent,
-    PrettyUrlPipe
+    PrettyUrlPipe,
+    GalleryComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxImageGalleryModule
   ],
   providers: [
     PortfolioService,

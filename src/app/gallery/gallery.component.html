@@ -1,0 +1,10 @@
+<div class="gallery">
+  <div class="list">
+    <div *ngFor="let item of items; let i = index" class="item image">
+      <img (click)="openGallery(i)" src="{{ item.thumbnailUrl }}" />
+    </div>
+  </div>
+
+  <ngx-image-gallery [images]="items" (onImageClicked)="galleryImageClicked($event)"></ngx-image-gallery>
+
+</div>

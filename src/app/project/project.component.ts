@@ -47,8 +47,10 @@ export interface Award {
 }
 
 export interface GalleryItem {
-  image: string;
-  caption: string;
+  thumbnailUrl: string;
+  url: string;
+  originalUrl: string;
+  title: string;
 }
 
 export interface Person {
