@@ -102,6 +102,24 @@
     "website": "/508Conference"
   },
   {
-    "name": "test 5"
+    "awards": [],
+    "color": "rgb(198, 94, 50)",
+    "coverPhotoURL": "/assets/projects/usability-testing-smashing-ideas/cover.png",
+    "description": "<blockquote><p>How might we change our internal tools to better meet our needs?</p></blockquote><p>Smashing Ideas wanted optimized thier internal workflow tools for better team efficiency. We were tasked to provide insights and suggestions on making or re-configuring better tools to meet SI's daily project needs.</p>",
+    "endDate": "2015-06-01",
+    "gallery": [
+      {
+        "url": "/assets/projects/usability-testing-smashing-ideas/SI_Team_Photo.jpg"
+      }
+    ],
+    "members": [],
+    "name": "Usability Testing: Smashing Ideas",
+    "responsibilities": [
+      "Usability Test Design",
+      "User Test Moderation"
+    ],
+    "startDate": "2015-03-01",
+    "summary": "Contracted with <a href='https://smashingideas.com'>Smashing Ideas</a>, a Seattle digital engagement agency, though the <a href='https://hcde.uw.edu'>University of Washington</a> to create and execute a usability test for proposed changes to an internal workflow tool.",
+    "website": null
   }
 ]
