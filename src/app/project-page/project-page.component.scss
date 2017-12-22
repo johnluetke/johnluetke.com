@@ -39,54 +39,52 @@ blockquote {
   }
 }
 
-div {
-  &.wrapper {
+div.project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  > div:not(.glance):not(.description) {
+    width: 100%;
+    padding: 10px 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 
-    > div:not(.glance):not(.description) {
-      width: 100%;
-      padding: 10px 0;
+    h3 {
+      padding: 0 0 20px 0;
+    }
+
+    .list {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: wrap;
+      width: 100%;
 
-      h3 {
-        padding: 0 0 20px 0;
-      }
+      .item {
+        text-align: center;
+        width: 50%;
 
-      .list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
+        @media screen and (min-width: map-get($screen, medium)) {
+          width: 33%;
+        }
 
-        .item {
-          text-align: center;
-          width: 50%;
+        @media screen and (min-width: map-get($screen, large)) {
+          width: 25%;
+        }
 
-          @media screen and (min-width: map-get($screen, medium)) {
-            width: 33%;
-          }
+        @media screen and (min-width: map-get($screen, xlarge)) {
+          width: 20%;
+        }
 
-          @media screen and (min-width: map-get($screen, large)) {
-            width: 25%;
-          }
-
-          @media screen and (min-width: map-get($screen, xlarge)) {
-            width: 20%;
-          }
-
-          .oi {
-            font-size: 5em;
-          }
+        .oi {
+          font-size: 5em;
         }
       }
     }
   }
 
-  &.cover {
+  .cover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -116,7 +114,7 @@ div {
     }
   }
 
-  &.glance {
+  .glance {
     //background-color: rgba(224, 235, 247, 1);
     position: relative;
     padding: 1em;
@@ -188,7 +186,7 @@ div {
     }
   }
 
-  &.summary {
+  .summary {
     width: 75%;
     padding-right: 5%;
     margin-top: 45px;
@@ -200,7 +198,7 @@ div {
     }
   }
 
-  &.description {
+  .description {
     padding-top: 1em;
 
     em {
@@ -232,14 +230,14 @@ div {
     }
   }
 
-  &.awards {
+  .awards {
     a[target] {
       color: black
     }
   }
 
-  &.collaborators {
-    display: none !important; 
+  .collaborators {
+    display: none !important;
   }
 }
 
