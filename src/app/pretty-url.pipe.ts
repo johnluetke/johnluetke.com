@@ -19,6 +19,10 @@ export class PrettyUrlPipe implements PipeTransform {
       hostname = url.split('/')[0];
     }
 
+    if (hostname == "") {
+      return url;
+    }
+
     //find & remove port number
     hostname = hostname.split(':')[0];
     //find & remove "?"
