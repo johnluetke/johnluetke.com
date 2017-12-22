@@ -49,13 +49,16 @@ export class ProjectPageComponent implements OnInit {
   }
 
   getIconName(responsibility: string) {
-    switch (responsibility) {
-      case "Software Engineering":
-        return "code";
-      case "Physical Prototyping":
+    switch (responsibility.toLowerCase()) {
+      case "physical prototyping":
         return "wrench";
-      case "User test moderation":
+      case "software engineering":
+      case "web design":
+        return "code";
+      case "user test moderation":
         return "clipboard";
+      case "visual design":
+        return "eyedropper";
       default:
         return "person";
     }
@@ -72,6 +75,8 @@ export class ProjectPageComponent implements OnInit {
         visible = this.project.awards != null && this.project.awards.length > 0; break;
       case 'responsibilities':
         visible = this.project.responsibilities !== null; break;
+      case 'website':
+        visible = this.project.website !== null; break;
       default:
         visible = true;
     }
