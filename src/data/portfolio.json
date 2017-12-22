@@ -80,16 +80,26 @@
     "website": "http://simthesocialrobot.com"
   },
   {
-    "name": "test 1"
-  },
-  {
-    "name": "test 2"
-  },
-  {
-    "name": "test 3"
-  },
-  {
-    "name": "test 4"
+    "awards": [],
+    "color": "rgb(67, 107, 113)",
+    "coverPhotoURL": "/assets/projects/this-or-this-fictitious-lecture-series/cover.png",
+    "description": "<p>&quot;This or This&quot; focused on the methods of interacting with machines shifting from a specially-design device, such as a mouse, keyboard or pen, to a natural capability, such as touch or voice.</p>",
+    "endDate": "2015-08-01",
+    "gallery": [
+      {
+        "url": "/assets/projects/this-or-this-fictitious-lecture-series/This_or_This_Poster.pdf",
+        "title": "Lecture Series Poster"
+      }
+    ],
+    "members": [],
+    "name": "This or This: Fictitious Lecture Series",
+    "responsibilities": [
+      "Visual Design",
+      "Web Design"
+    ],
+    "startDate": "2015-06-01",
+    "summary": "&quot;This or This&quot; is a fictitious lecture series that I concocted in order to create a set of visuals to brand an generate excitement about an event. This was a class project though for my graduate degree from the <a href='https://hcde.uw.edu'>Human-Centered Design and Engineering</a> program at the <a href='https://uw.edu'>University of Washington</a>.",
+    "website": "/508Conference"
   },
   {
     "name": "test 5"
