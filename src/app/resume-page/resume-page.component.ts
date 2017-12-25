@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PageComponent } from '../page/page.component';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { UiService } from '../ui.service';
 
 @Component({
@@ -9,11 +10,17 @@ import { UiService } from '../ui.service';
 })
 export class ResumePageComponent extends PageComponent implements OnInit {
 
-  constructor(protected _uiService: UiService) {
+  public resumeUrl: string;
+  public safeResumeUrl: SafeUrl;
+
+  constructor(protected _uiService: UiService, private _sanitizer: DomSanitizer) {
     super(_uiService);
+    this.resumeUrl = "/assets/resume.pdf";
   }
 
   ngOnInit() {
+    this.safeResumeUrl = this._sanitizer.bypassSecurityTrustResourceUrl(this.resumeUrl + "#view=FitH");
+    console.log(this.safeResumeUrl)
   }
 
 }

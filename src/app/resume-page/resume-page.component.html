@@ -1,3 +1,7 @@
-<p>
-  resume works!
-</p>
+<div class="resume">
+  <object [data]="safeResumeUrl" type="application/pdf" class="embed-responsive-item">
+    <iframe src="{{ resumeUrl }}" width="100%" height="100%" style="border: none;">
+      It appears that your browser cannot embed PDFs. You can <a href="{{ resumeUrl }}">view my resume directly</a>.
+    </iframe>
+  </object>
+</div>
