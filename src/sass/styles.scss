@@ -7,5 +7,36 @@
 
 body {
   font-family: 'Source Sans Pro';
+  min-height: $body-min-height;
   min-width: $body-min-width;
+
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    flex: 1;
+    margin-top: 165px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  footer {
+    color: rgb(170, 170, 170);
+    font-size: smaller;
+    padding: 1em 0;
+    text-align: center;
+
+    a {
+      color: unset;
+      text-decoration: underline;
+
+      &:hover {
+        color: unset;
+      }
+    }
+
+    div {
+      font-size: smaller;
+    }
+  }
 }

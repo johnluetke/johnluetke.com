@@ -9,6 +9,17 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <div class="content">
+    <app-root></app-root>
+  </div>
+  <footer>
+    &copy; <span id="current-year">2017</span> John Luetke
+    <div>
+      Code is released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a> unless otherwise noted. Icons from <a href="https://www.useiconic.com/open" target="_blank">Open Iconic</a>.
+    </div>
+  </footer>
 </body>
+<script>
+  document.getElementById("current-year").innerHTML = (new Date()).getFullYear();
+</script>
 </html>
