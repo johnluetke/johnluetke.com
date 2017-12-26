@@ -1,8 +1,10 @@
 import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
+import { PageComponent } from '../page/page.component';
 import { ActivatedRoute } from '@angular/router';
 import { Project, ProjectUtil } from '../project/project.component'
 import { PortfolioService } from '../portfolio-page/portfolio.service';
 import { DomSanitizer, SafeStyle, SafeHtml } from '@angular/platform-browser';
+import { UiService } from '../ui.service';
 
 @Component({
   selector: 'project-page',
@@ -10,7 +12,7 @@ import { DomSanitizer, SafeStyle, SafeHtml } from '@angular/platform-browser';
   styleUrls: ['./project-page.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ProjectPageComponent implements OnInit {
+export class ProjectPageComponent extends PageComponent implements OnInit {
 
   Arr = Array;
   MAX_GLANCE_COUNT = 4;
@@ -27,15 +29,19 @@ export class ProjectPageComponent implements OnInit {
 
   private sub: any;
 
-  constructor(private _portfolioService: PortfolioService,
+  constructor(protected _uiService: UiService,
+              private _portfolioService: PortfolioService,
               private _sanitizationService: DomSanitizer,
               private _route: ActivatedRoute) {
+    super(_uiService);
     this.project = { awards: [], color: null, coverPhotoURL: null, description: null, endDate: null, gallery: [], members: [], name: "Loading...", responsibilities: [], startDate: null, summary: null, tagline: null, website: null };
     this.glanceCount = 0;
   }
 
   ngOnInit() {
     const self = this;
+    super.ngOnInit();
+
     this.sub = this._route.params.subscribe(params => {
        this.url = params['name'];
        this._portfolioService.fetchProject(this.url, function(project: Project) {

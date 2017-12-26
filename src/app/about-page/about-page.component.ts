@@ -14,6 +14,7 @@ export class AboutPageComponent extends PageComponent implements OnInit {
   }
 
   ngOnInit() {
+    super.ngOnInit();
   }
 
 }

@@ -18,5 +18,6 @@ export class ContactPageComponent extends PageComponent implements OnInit {
   }
 
   ngOnInit() {
+    super.ngOnInit();
   }
 }

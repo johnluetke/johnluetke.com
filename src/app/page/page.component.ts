@@ -6,6 +6,9 @@ export abstract class PageComponent implements OnInit {
   constructor(protected _uiService: UiService) { }
 
   ngOnInit() {
+    if (this._uiService.isHeaderExpanded()) {
+      this._uiService.toggleHeader();
+    }
   }
 
   @HostListener('window:scroll', ['$event'])

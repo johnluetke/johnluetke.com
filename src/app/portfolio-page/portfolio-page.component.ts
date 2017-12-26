@@ -20,6 +20,8 @@ export class PortfolioPageComponent extends PageComponent implements OnInit {
   ngOnInit() {
     const self = this;
     self.portfolio = [];
+    super.ngOnInit();
+
     this.portfolioService.fetch(function(projects: Project[]) {
       self.portfolio = projects;
 
