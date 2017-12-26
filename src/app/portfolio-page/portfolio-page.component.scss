@@ -1,3 +1,5 @@
+@import '../../sass/variables';
+
 div {
 
   &.portfolio {
@@ -14,11 +16,11 @@ div {
     .item {
       width: 33%;
 
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: map-get($screen, large)) {
         width: 50%;
       }
 
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: map-get($screen, small)) {
         width: 100%;
       }
     }
