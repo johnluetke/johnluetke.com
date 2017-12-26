@@ -8,7 +8,7 @@ import { ProjectPageComponent } from './project-page/project-page.component';
 import { ResumePageComponent}     from './resume-page/resume-page.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/about', pathMatch: 'full' },
+  { path: '', redirectTo: '/portfolio', pathMatch: 'full' },
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
   { path: 'portfolio', component: PortfolioPageComponent, pathMatch: 'full' },
