@@ -21,8 +21,11 @@ export class GalleryComponent implements OnInit {
       if (item.url.split('.')[1] == 'pdf') {
         item.originalUrl = item.url;
         item.title += " (click image to download pdf)";
-        item.thumbnailUrl = item.url.split('.')[0] + ".png";
         item.url = item.url.split('.')[0] + ".png";
+
+        if (!item.thumbnailUrl) {
+          item.thumbnailUrl = item.url.split('.')[0] + ".png";
+        }
       }
       else if (item.thumbnailUrl == null) {
         item.thumbnailUrl = item.url;
