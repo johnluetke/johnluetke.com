@@ -11,7 +11,7 @@ import { Project } from '../project/project.component';
 })
 export class PortfolioPageComponent extends PageComponent implements OnInit {
 
-  private portfolio: Project[];
+  portfolio: Project[];
 
   constructor(private portfolioService: PortfolioService, protected _uiService: UiService) {
     super(_uiService);

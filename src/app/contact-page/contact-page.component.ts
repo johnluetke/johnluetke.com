@@ -10,7 +10,7 @@ import { UiService } from '../ui.service';
 })
 export class ContactPageComponent extends PageComponent implements OnInit {
 
-  private email_host: string;
+  email_host: string;
 
   constructor(protected _uiService: UiService, @Inject(DOCUMENT) private document) {
     super(_uiService);

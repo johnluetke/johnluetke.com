@@ -8,7 +8,7 @@ import { UiService } from '../ui.service';
 })
 export class HeaderComponent implements OnInit {
 
-  private expanded = false;
+  expanded = false;
   private headerVisibleSubscription: any;
 
   constructor(private _uiService: UiService) {
