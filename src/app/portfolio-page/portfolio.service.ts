@@ -10,7 +10,7 @@ export class PortfolioService {
 
   fetch(callback: Function): void {
     this.http
-      .get<Project[]>('/data/portfolio.json')
+      .get<Project[]>('/assets/projects.json')
       .subscribe(data => {
         callback(data);
       });
