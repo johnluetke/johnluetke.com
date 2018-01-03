@@ -20,7 +20,7 @@ export class ResumePageComponent extends PageComponent implements OnInit {
 
   ngOnInit() {
     super.ngOnInit();
-    this.safeResumeUrl = this._sanitizer.bypassSecurityTrustResourceUrl(this.resumeUrl + "#view=FitH");
+    this.safeResumeUrl = this._sanitizer.bypassSecurityTrustResourceUrl(this.resumeUrl);
     console.log(this.safeResumeUrl)
   }
 
