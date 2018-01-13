@@ -59,7 +59,8 @@ export interface Person {
 
 export class ProjectUtil {
   static getUrlNameFromProject(project: Project): string {
-    return project.name.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/[^a-z0-9]/g, '-');
+    let name = project.name.replace(".com", "");
+    return name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/[^a-z0-9]/g, '-');
   }
 
   static rgb2rgba(color, opacity) {

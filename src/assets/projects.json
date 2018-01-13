@@ -130,5 +130,61 @@
     "startDate": "2015-03-01",
     "summary": "Contracted with <a href='https://smashingideas.com'>Smashing Ideas</a>, a Seattle digital engagement agency, though the <a href='https://hcde.uw.edu'>University of Washington</a> to create and execute a usability test for proposed changes to an internal workflow tool.",
     "website": null
+  },
+  {
+    "awards": [],
+    "color": "rgb(36, 66, 60)",
+    "coverPhotoURL": "/assets/projects/findcheeseheads/cover.png",
+    "description": null,
+    "endDate": null,
+    "gallery": [],
+    "members": [],
+    "name": "FindCheeseheads.com",
+    "startDate": "2015-09-03",
+    "summary": "FindCheeseheads is a community-driven website for locating and rating &quot;Packer bars&quot; across the US. It spawned from a <a href='https://redd.it/3jijac' target='_blank'>post on /r/greenbaypackers</a>.",
+    "website": "https://findcheeseheads.com"
+  },
+  {
+    "awards": [],
+    "color": null,
+    "coverPhotoURL": null,
+    "description": null,
+    "endDate": null,
+    "gallery": [],
+    "members": [],
+    "name": "Stat Tracker",
+    "startDate": "2014-04-22",
+    "summary": "Stat Tracker is a web app to track stats and predict badges for Ingress agents.",
+    "website": null
+  },
+  {
+    "awards": [],
+    "color": null,
+    "coverPhotoURL": null,
+    "description": null,
+    "endDate": null,
+    "gallery": [],
+    "members": [],
+    "name": "911 Dispatch",
+    "startDate": "2012-05-03",
+    "summary": null,
+    "website": null
+  },
+  {
+    "awards": [],
+    "color": null,
+    "coverPhotoURL": "/assets/projects/nr13-romeo-08/cover.png",
+    "description": "<p>The augmented-reality game <em>Ingress</em> contains a mechanic where the competing factions gain a mind-unit score at every 5 hour checkpoint. Every 175 hours, the faction with the highest mind-unit score 'wins the cycle'. This website catalouges a historic record of the cycles, as <em>Ingress</em> does not provide a native interface to this data.</p><blockquote>[That's] a wonderful idea ... I like it.<br/><cite>Andrew Krug, Ingress Community Manager <sup><a href='https://plus.google.com/+AndrewKrug/posts/dm6cCVnFCbn'>ref</a></sup></cite></blockquote><p>The site has been well-recieved by both factions, as well as the community at large. It has spread to <a href='http://nr13-romeo-02.com'>other</a> <a href='http://nr13-romeo-03.com'>regions</a> in the Pacific Northwest, as well as <a href='http://allcells.willbe.blue/'>globally through a community-driven effort.</a></p><p>My biggest challenge with the project was coming up with a novel way to display historical data. A simple list would have sufficied, but, given the binary possibilites of outcomes, I felt like I could do something more. I can't recall exactly what inspired me, but I do remember thinking to myself that a sort of timeline would be the best approach. Visualizing the individual cycles as point on that timeline and coloring them to the faction that won was the obivous direction. As vertical list of blocks, the data seem like it was being presented in an uniteresting way. I applied the revolutionary idea of rotating it 90 degress, resulting in the wrapped, horizontal timeline. After launching the site, I had some interesting feedback presented to me : &quot;It's fun that we can draw pictures on the site by playing the game&quot;.</p><p>In addition to the main timelime visualization, I also present other statistics about the region, such as the overall count of cycles won by each faction, the the cumluative mind-unit score, and longest streaks.",
+    "endDate": null,
+    "gallery": [],
+    "members": [],
+    "name": "nr13-romeo-08.com",
+    "responsibilities": [
+      "Data Visualization",
+      "Web Design"
+    ],
+    "startDate": "2016-05-03",
+    "summary": "nr13-romeo-08.com is a score tracking website for <a href='https://ingress.com'>Ingress</a> agents in the NR13-ROMEO-08 (Greater Puget Sound) region. ",
+    "website": "http://nr13-romeo-08.com"
   }
 ]
