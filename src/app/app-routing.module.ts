@@ -13,6 +13,8 @@ const appRoutes: Routes = [
   { path: 'contact', component: ContactPageComponent },
   { path: 'portfolio', component: PortfolioPageComponent, pathMatch: 'full' },
   { path: 'portfolio/:name', component: ProjectPageComponent },
+  { path: 'projects', component: PortfolioPageComponent, pathMatch: 'full' },
+  { path: 'projects/:name', component: ProjectPageComponent },
   { path: 'resume', component: ResumePageComponent }
 ];
 
