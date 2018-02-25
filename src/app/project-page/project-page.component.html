@@ -14,8 +14,10 @@
 
   <div class="glance">
     <div *ngIf="showGlance('website')" class="website">
-      <div class="oi oi-globe"></div>
-      <a href="{{ project.website }}" class="url">{{ project.website | prettyUrl }}</a>
+      <a href="{{ project.website }}" class="url" target="_blank">
+        <div class="oi oi-globe"></div><br/>
+	{{ project.website | prettyUrl }}
+      </a>
     </div>
 
     <div *ngIf="showGlance('status')" class="status">
