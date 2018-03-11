@@ -147,15 +147,33 @@
   {
     "awards": [],
     "color": null,
-    "coverPhotoURL": null,
-    "description": null,
-    "endDate": null,
-    "gallery": [],
+    "coverPhotoURL": "/assets/projects/stat-tracker/thumbnail.png",
+    "description": "Stat Tracker is a hostable web app that allows Ingress agents to upload data from thier agent profile and receive insights into thier individual and local team performance. Given multiple data points, Stat Tracker will perform linear regression and predict how long it would take an individual agent to earn a badge. Agents can track thier progress over the past week, month, or all-time see how they stack up against other members of thier local team via leaderboards or insights into which aspects of the game their local team favors.<p/>Agents can upload their statics via manual entry or via a screenshot of thier agent profile. The screenshot would be processed via OCR and statistics extracted automatically. And API is also available for agents to use thier stats however they pleased.",
+    "endDate": "2016-06-20",
+    "gallery": [
+      {
+        "url": "/assets/projects/stat-tracker/92db58ad.png",
+        "title": "A pie chart is available to each agent that breaks down how their AP was acquired."
+      },
+      {
+        "url": "/assets/projects/stat-tracker/8345cff1.png",
+        "title": "Multple ways are available for agents to input their statistics."
+      },
+      {
+        "url": "/assets/projects/stat-tracker/9ae95f33.png",
+        "title": "Agents could create an access token to upload or access data outaside of the website."
+      }
+    ],
     "members": [],
     "name": "Stat Tracker",
+    "responsibilities": [
+      "API Design",
+      "Data Visualization",
+      "Web Design"
+    ],
     "startDate": "2014-04-22",
-    "summary": "Stat Tracker is a web app to track stats and predict badges for Ingress agents.",
-    "website": null
+    "summary": "Stat Tracker is a web app to track stats and predict badges for <a href='//ingress.com'>Ingress</a> agents.",
+    "website": "https://github.com/johnluetke/StatTracker"
   },
   {
     "awards": [],
