@@ -49,7 +49,7 @@ export class ProjectPageComponent extends PageComponent implements OnInit {
          self.summary = self._sanitizationService.bypassSecurityTrustHtml(project.summary);
          self.description = self._sanitizationService.bypassSecurityTrustHtml(project.description);
          self.ongoing = project.endDate == null;
-         self.coverImage = self._sanitizationService.bypassSecurityTrustStyle('url(' + project.coverPhotoURL + ')');
+         self.coverImage = "url(/assets/projects/" + params['name'] + "/cover.png)";
        });
     });
   }
