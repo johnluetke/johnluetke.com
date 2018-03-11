@@ -158,6 +158,12 @@ div.project {
     }
 
     .responsibilities {
+      text-align: left;
+      
+      ul {
+        margin-left: 5em;
+      }
+
       li {
         list-style: none;
       }
