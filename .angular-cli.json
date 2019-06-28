@@ -9,10 +9,14 @@
       "outDir": "dist",
       "assets": [
         ".htaccess",
-        "508Conference",
         "assets",
         "certificates",
-        "favicon.ico"
+        "favicon.ico",
+        {
+            "glob": "**/*",
+            "input": "508Conference",
+            "output": "508Conference"
+        }
       ],
       "index": "index.html",
       "main": "main.ts",
