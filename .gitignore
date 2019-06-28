@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+src/508Conference/style.css
 
 # dependencies
 /node_modules

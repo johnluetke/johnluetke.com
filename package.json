@@ -4,10 +4,14 @@
   "license": "MIT",
   "scripts": {
     "build:508Conference": "lessc src/508Conference/style.less src/508Conference/style.css",
-    "build:johnluetke.com": "ng build",
+    "build:johnluetke.com": "ng build --prod",
+    "build": "run-s build:508Conference build:johnluetke.com docker:stage docker:build",
+    "clean": "rm -rf dist/",
+    "docker:build": "docker build dist/ -t johnluetke/website:latest -t johnluetke/website:`date +'%Y-%m-%d'`",
+    "docker:push": "docker push johnluetke/website:latest && docker push johnluetke/website:`date +'%Y-%m-%d'`",
+    "docker:stage": "cp Dockerfile dist/ && cp johnluetke.nginx.conf dist/",
     "ng": "ng",
     "start": "ng serve",
-    "build": "run-s build:508Conference build:johnluetke.com",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
