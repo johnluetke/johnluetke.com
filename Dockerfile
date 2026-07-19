@@ -1,10 +1,21 @@
-FROM alpine
+FROM node:alpine AS build
 
-RUN npm install
-RUN npm build
+WORKDIR /app
+
+# Install dependencies before building the Angular app.
+COPY . .
+RUN npm ci
+RUN ls -l
+
+# Build static assets for production.
+RUN npm run build
+RUN ls -l
 
 FROM nginx:alpine
 
-# Paths are relative to dist/
-COPY www /usr/share/nginx/html
-COPY johnluetke.nginx.conf /etc/nginx/conf.d/default.conf
+# Copy the compiled frontend output into nginx's served directory.
+COPY --from=build /app/www /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
