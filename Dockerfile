@@ -1,7 +1,9 @@
-FROM nginx:alpine
+FROM alpine
 
 RUN npm install
 RUN npm build
+
+FROM nginx:alpine
 
 # Paths are relative to dist/
 COPY www /usr/share/nginx/html
